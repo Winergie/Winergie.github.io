@@ -5,9 +5,9 @@
 */
 (function($) {
 	$(function() {
-		$("#header").load("header.html");
-		$("#footer").load("footer.html");
-		$("#menu").load("navbar.html");
+		$("#header").load("/header.html");
+		$("#footer").load("/footer.html");
+		$("#menu").load("/navbar.html");
 	});
 
 	var	$window = $(window),
