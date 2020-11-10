@@ -2390,31 +2390,20 @@ ul.icons {
     opacity: 0.5;
     padding: 2rem 0;
     text-align: center; }
-  @media screen and (max-width: 1280px) {
-    #footer {
-      padding: 4rem 0 2rem 0 ; } }
-  @media screen and (max-width: 980px) {
-    #footer .content {
-      -moz-flex-wrap: wrap;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-      #footer .content section {
-        width: 50%; }
-        #footer .content section:first-child {
-          width: 100%;
-          padding-right: 0; } }
   @media screen and (max-width: 736px) {
     #footer {
       padding: 3rem 0 1rem 0 ; }
+     #footer .text{
+         width: fit-content;
+         min-width: 170px;
+     }
       #footer .content section {
         width: 100%; }
+        #footer .content section:first-child {
+          width: 60%;}
         #footer .content section:last-child {
+            width: 40%;
           padding-left: 0; } }
-  @media screen and (max-width: 480px) {
-    #footer {
-      padding: 2rem 0 0.1rem 0 ; } }
-
 /* Header */
 body {
   padding-top: 3.25rem; }
