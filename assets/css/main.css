@@ -13,6 +13,23 @@
   width: 50%;
 }
 
+.contact{
+    min-height: 500px;
+}
+   .lft,.rght {
+      height: 100%;
+      width: 50%;
+      min-height: 500px;
+   }
+   .lft {
+    height: auto;
+    float: left;
+   }
+   .rght {
+    height: auto;
+      float: right;
+   }
+
 @-ms-viewport {
   width: device-width; }
 body {
@@ -2351,6 +2368,10 @@ ul.icons {
     text-decoration: none; }
     #footer a:hover {
       color: #ce1b28; }
+  #footer .text{
+      width: fit-content;
+      min-width: 230px;
+  }
   #footer .content {
     display: -moz-flex;
     display: -webkit-flex;
@@ -2359,11 +2380,10 @@ ul.icons {
     #footer .content section {
       width: 50%; }
       #footer .content section:first-child {
-        width: 25%;
+        width: 82%;
         padding-right: 4rem; }
       #footer .content section:last-child {
-          width: 25%;
-        padding-left: 4rem; }
+          width: 18%;}
   #footer .copyright {
     border-top: 1px solid;
     font-size: 0.8rem;
