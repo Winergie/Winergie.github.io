@@ -18,16 +18,47 @@
 }
    .lft,.rght {
       height: 100%;
-      width: 50%;
-      min-height: 500px;
+
    }
    .lft {
     height: auto;
     float: left;
+    width: 50%;
+    padding: 0rem 0 1rem 0 ;
    }
    .rght {
     height: auto;
       float: right;
+      width: 50%;
+   }
+
+   @media screen and (max-width: 1200px) {
+       .lft {
+        height: auto;
+        float: left;
+        width: 50%;
+       }
+       .rght {
+        height: auto;
+          float: right;
+         width: auto;
+       }
+   }
+
+   @media screen and (max-width: 850px) {
+       .contact{
+           min-height: 700px;
+       }
+       .lft {
+           height: auto;
+        float: left;
+        width: 100%;
+       }
+       .rght {
+        height: auto;
+          float: left;
+         width: auto;
+       }
    }
 
 @-ms-viewport {
@@ -1804,7 +1835,7 @@ ul.icons {
 
 /* Wrapper */
 .wrapper {
-  padding: 8rem 0 6rem 0 ;
+  padding: 2rem 0 2rem 0 ;
   position: relative;
   z-index: 1; }
   @media screen and (max-width: 1280px) {
