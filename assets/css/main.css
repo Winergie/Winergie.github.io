@@ -7,57 +7,68 @@
 */
 /* Basic */
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.constrain_map{
+    overflow: hidden;
 }
 
 .contact{
     min-height: 500px;
 }
-   .lft,.rght {
-      height: 100%;
+.lft,.rght {
+    height: 100%;
 
-   }
-   .lft {
+}
+.lft {
     height: auto;
     float: left;
     width: 50%;
     padding: 0rem 0 1rem 0 ;
-   }
-   .rght {
+}
+.rght {
     height: auto;
-      float: right;
-      width: 50%;
-   }
+    float: right;
+    width: 50%;
+}
 
    @media screen and (max-width: 1200px) {
        .lft {
-        height: auto;
-        float: left;
-        width: 50%;
+            height: auto;
+            float: left;
+            width: 70%;
        }
        .rght {
-        height: auto;
-          float: right;
-         width: auto;
+            height: auto;
+            float: right;
+            width: auto;
        }
    }
 
    @media screen and (max-width: 850px) {
+       .container{
+            display: flex;
+            flex-direction: column;
+       }
+
        .contact{
            min-height: 700px;
        }
        .lft {
-           height: auto;
-        float: left;
-        width: 100%;
+            order: 2;
+            height: auto;
+            float: left;
+            width: 100%;
        }
        .rght {
-        height: auto;
-          float: left;
-         width: auto;
+            order: 1;
+            height: auto;
+            float: left;
+            width: auto;
        }
    }
 
@@ -2411,10 +2422,10 @@ ul.icons {
     #footer .content section {
       width: 50%; }
       #footer .content section:first-child {
-        width: 82%;
+        width: 80%;
         padding-right: 4rem; }
       #footer .content section:last-child {
-          width: 18%;}
+          width: 20%;}
   #footer .copyright {
     border-top: 1px solid;
     font-size: 0.8rem;
@@ -2422,6 +2433,21 @@ ul.icons {
     padding: 2rem 0;
     text-align: center; }
   @media screen and (max-width: 736px) {
+    #footer {
+      padding: 3rem 0 1rem 0 ; }
+     #footer .text{
+         width: fit-content;
+         min-width: 140px;
+     }
+      #footer .content section {
+        width: 100%; }
+        #footer .content section:first-child {
+          width: 65%;}
+        #footer .content section:last-child {
+            width: 35%;
+          padding-left: 0; } }
+
+    @media screen and (max-width: 540px) {
     #footer {
       padding: 3rem 0 1rem 0 ; }
      #footer .text{
