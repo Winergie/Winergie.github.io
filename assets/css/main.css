@@ -2426,14 +2426,14 @@ ul.icons {
       padding: 3rem 0 1rem 0 ; }
      #footer .text{
          width: fit-content;
-         min-width: 170px;
+         min-width: 140px;
      }
       #footer .content section {
         width: 100%; }
         #footer .content section:first-child {
-          width: 60%;}
+          width: 55%;}
         #footer .content section:last-child {
-            width: 40%;
+            width: 45%;
           padding-left: 0; } }
 /* Header */
 body {
