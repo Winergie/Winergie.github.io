@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Winergie - Offerte</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+	  <div id="header"></div>
+	  <!-- Navbar -->
+	  <div id="menu"></div>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Offerte</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+
+						<!-- Form -->
+							<h3>Vraag vrijblijvend uw offerte aan</h3>
+							<form method="post" data-gf-url="https://docs.google.com/forms/d/e/1FAIpQLSf6MYnrspHWck4l2FDVyTRjpwjY_gNbnRonjIw2W4oyLSJvmg/formResponse?&entry.416351068=name&entry.2087866633=email&entry.1849398599=address&entry.768358319=postcode&entry.1931100851=plaats&entry.260889613=gsm&entry.495255673=soort_woning&entry.1299785672=soort_interesse&entry.681376018=plannen_beschikbaar&entry.221079166=verwarmingsbronnen&entry.1925598433=bouwjaar&entry.1329826743=epc_voor&entry.81319540=opmerkingen&submit=SUBMIT">
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="name" id="name" value="" placeholder="Naam/Firma" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="email" id="email" value="" placeholder="Email" />
+									</div>
+									<div class="col-4 col-12-xsmall">
+										<input type="text" name="address" id="address" value="" placeholder="Adres" />
+									</div>
+									<div class="col-4 col-12-xsmall">
+										<input type="text" name="postcode" id="postcode" value="" placeholder="Postcode" />
+									</div>
+									<div class="col-4 col-12-xsmall">
+										<input type="text" name="plaats" id="plaats" value="" placeholder="Plaats" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="gsm" id="gsm" value="" placeholder="Telefoon/Gsm-nummer" />
+									</div>
+									<!-- Break -->
+									<div class="col-6 col-12-xsmall">
+										<select name="soort_woning" id="soort_woning">
+											<option value="">Soort woning</option>
+											<option value="Studio">Studio</option>
+											<option value="Appartement">Appartement</option>
+											<option value="Duplex appartement">Duplex appartement</option>
+											<option value="Rijwoning">Rijwoning</option>
+											<option value="Halfopen">Halfopen</option>
+											<option value="Vrijstaand">Vrijstaand</option>
+										</select>
+									</div>
+									<div class="col-12 col-12-small">
+										<p>Uw interesse:</p>
+										<input type="checkbox" class = "interesse" id="epc_residentieel" name="epc_residentieel" value = "EPC residentieel;">
+										<label for="epc_residentieel">EPC residentieel</label>
+										<input type="checkbox" class = "interesse" id="epc_niet_residentieel" name="epc_niet_residentieel" value = "EPC niet residentieel (handelszaak);">
+										<label for="epc_niet_residentieel">Kleine niet residenti&eumlle eenheden (handelszaak)</label>
+										<input type="checkbox" class = "interesse" id="epc_gemeenschappelijke_delen" name="epc_gemeenschappelijke_delen" value = "EPC gemeenschappelijke delen;">
+										<label for="epc_gemeenschappelijke_delen">EPC gemeenschappelijke delen appartementsgebouw</label>
+										<input type="checkbox" class = "interesse" id="verwarmingsaudit" name="verwarmingsaudit" value = "Verwarmingsaudit">
+										<label for="verwarmingsaudit">Verwarmingsaudit centrale stookplaatsen > 100kW</label>
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<p>Plannen beschikbaar?</p>
+										<input type="radio" id="plannen_beschikbaar" name="plannen_beschikbaar" value = "Ja">
+										<label for="plannen_beschikbaar">Ja</label>
+										<input type="radio" id="plannen_beschikbaar" name="plannen_beschikbaar" checked value = "Nee">
+										<label for="plannen_beschikbaar">Nee</label>
+									</div>
+									<!-- Break -->
+									<div class="col-6 col-12-small">
+										<p>Verwarmingsbron(nen):</p>
+										<input type="checkbox" class = "verwarming" id="verwarmingsbron_cvketel" name="verwarmingsbron_cvketel" value = "CV Ketel;">
+										<label for="verwarmingsbron_cvketel">Centrale verwarmingsketel</label>
+										<input type="checkbox" class = "verwarming" id="verwarmingsbron_gasketel" name="verwarmingsbron_gasketel" value = "Gasketel;">
+										<label for="verwarmingsbron_gasketel">Gasketel</label>
+										<input type="checkbox" class = "verwarming" id="verwarmingsbron_houtkachel" name="verwarmingsbron_houtkachel" value = "Houtkachel;">
+										<label for="verwarmingsbron_houtkachel">Houtkachel</label>
+										<input type="checkbox" class = "verwarming" id="verwarmingsbron_elek_toestellen" name="verwarmingsbron_elek_toestellen" value = "Vaste elektrische verwarmingstoestellen;">
+										<label for="verwarmingsbron_elek_toestellen">Vaste elektrische verwarmingstoestellen</label>
+										<input type="checkbox" class = "verwarming" id="andere_verwarmingsbron" name="andere_verwarmingsbron" value = "Andere verwarmingsbron">
+										<label for="andere_verwarmingsbron">Andere</label>
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="bouwjaar" id="bouwjaar" value="" placeholder="Bouwjaar" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<select name="epc_voor" id="epc_voor">
+											<option value="">EPC voor:</option>
+											<option value="Verkoop van het pand">Verkoop van dit pand</option>
+											<option value="Aankoop van het pand">Aankoop van dit pand</option>
+											<option value="Verhuur van het pand">Verhuur van dit pand</option>
+											<option value="Huur van het pand">Huur van dit pand</option>
+											<option value="Andere reden">Andere reden</option>
+										</select>
+									</div>
+									<!-- Break -->
+									<div class="col-12">
+										<textarea name="opmerkingen" id="opmerkingen" placeholder="Opmerkingen" rows="6"></textarea>
+									</div>
+									<input type = "hidden" id="soort_interesse" name = "soort_interesse"/>
+									<input type = "hidden" id="verwarmingsbronnen" name = "verwarmingsbronnen"/>
+									<!-- Break -->
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Submit Form" class="primary"/></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<div id="footer"></div>
+
+			<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+			</body>
+			</html>
