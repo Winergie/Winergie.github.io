@@ -9,22 +9,37 @@
 
 <url>
   <loc>https://winergie.be/</loc>
-  <lastmod>2020-09-17T06:52:11+00:00</lastmod>
+  <lastmod>2020-11-12T20:10:17+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://winergie.be/epc_certificaat/</loc>
-  <lastmod>2020-09-17T06:52:11+00:00</lastmod>
+  <loc>https://winergie.be/epc_general/</loc>
+  <lastmod>2020-11-12T20:10:16+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://winergie.be/verwarmingsaudit/</loc>
-  <lastmod>2020-09-17T06:52:11+00:00</lastmod>
+  <lastmod>2020-11-12T20:10:17+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://winergie.be/epc_residentieel/</loc>
+  <lastmod>2020-11-12T20:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://winergie.be/epc_klein_niet_residentieel/</loc>
+  <lastmod>2020-11-12T20:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://winergie.be/epc_gemeenschappelijke_delen/</loc>
+  <lastmod>2020-11-12T20:10:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://winergie.be/contact/</loc>
-  <lastmod>2020-09-17T06:52:11+00:00</lastmod>
+  <lastmod>2020-11-12T20:10:16+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
