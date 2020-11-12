@@ -24,8 +24,7 @@ function ChangeInputs()
         }
     }
     var checkedStr2 = checked2.join(' ');
-    document.getElementById('soort_interesse').value = checkedStr2;
-	document.write(document.getElementById('soort_interesse').value);   }
+    document.getElementById('soort_interesse').value = checkedStr2;   }
 
    window.addEventListener("load", function () {
      const form = document.querySelector("form");
