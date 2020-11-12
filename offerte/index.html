@@ -27,10 +27,10 @@
 
 						<!-- Form -->
 							<h3>Vraag vrijblijvend uw offerte aan</h3>
-							<form method="post" action="form_to_email.php">
+							<form method="post" data-gf-url="https://docs.google.com/forms/d/e/1FAIpQLSf6MYnrspHWck4l2FDVyTRjpwjY_gNbnRonjIw2W4oyLSJvmg/formResponse?&entry.416351068=name&entry.221079166=verwarmingsbronnen&submit=SUBMIT">
 								<div class="row gtr-uniform">
 									<div class="col-6 col-12-xsmall">
-										<input type="text" name="name" id="name" value="" placeholder="Naam" />
+										<input type="text" name="name" id="name" value="" placeholder="Naam/Firma" />
 									</div>
 									<div class="col-6 col-12-xsmall">
 										<input type="email" name="email" id="email" value="" placeholder="Email" />
@@ -45,7 +45,7 @@
 										<input type="text" name="postcode" id="plaats" value="" placeholder="Plaats" />
 									</div>
 									<div class="col-6 col-12-xsmall">
-										<input type="text" name="gsm" id="gsm" value="" placeholder="Gsm-nummer" />
+										<input type="text" name="gsm" id="gsm" value="" placeholder="Telefoon/Gsm-nummer" />
 									</div>
 									<!-- Break -->
 									<div class="col-6 col-12-xsmall">
@@ -59,11 +59,16 @@
 											<option value="vrijstaand">Vrijstaand</option>
 										</select>
 									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="inhoud_woning" id="inhoud_woning" value="" placeholder="Inhoud woning [m³]" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="oppervlak_woning" id="oppervlak_woning" value="" placeholder="Woonoppervlak [m²]" />
+									<div class="col-12 col-12-small">
+										<p>Uw interesse:</p>
+										<input type="checkbox" id="epc_residentieel" name="epc_residentieel">
+										<label for="epc_residentieel">EPC residentieel</label>
+										<input type="checkbox" id="epc_niet_residentieel" name="epc_niet_residentieel">
+										<label for="epc_niet_residentieel">Kleine niet residenti&eumlle eenheden (handelszaak)</label>
+										<input type="checkbox" id="epc_gemeenschappelijke_delen" name="epc_gemeenschappelijke_delen">
+										<label for="epc_gemeenschappelijke_delen">EPC gemeenschappelijke delen appartementsgebouw</label>
+										<input type="checkbox" id="verwarmingsaudit" name="verwarmingsaudit">
+										<label for="verwarmingsaudit">Verwarmingsaudit centrale stookplaatsen > 100kW</label>
 									</div>
 									<div class="col-6 col-12-xsmall">
 										<p>Plannen beschikbaar?</p>
@@ -75,16 +80,16 @@
 									<!-- Break -->
 									<div class="col-6 col-12-small">
 										<p>Verwarmingsbron(nen):</p>
-										<input type="checkbox" id="verwarmingsbron_cvketel" name="verwarmingsbron">
+										<input type="checkbox" class = "verwarming" id="verwarmingsbron_cvketel" name="verwarmingsbron_cvketel" value = "CV Ketel;">
 										<label for="verwarmingsbron_cvketel">Centrale verwarmingsketel</label>
-										<input type="checkbox" id="verwarmingsbron_gasketel" name="verwarmingsbron">
+										<input type="checkbox" class = "verwarming" id="verwarmingsbron_gasketel" name="verwarmingsbron_gasketel" value = "Gasketel;">
 										<label for="verwarmingsbron_gasketel">Gasketel</label>
-										<input type="checkbox" id="verwarmingsbron_houtkachel" name="verwarmingsbron">
+										<input type="checkbox" class = "verwarming" id="verwarmingsbron_houtkachel" name="verwarmingsbron_houtkachel" value = "Houtkachel;">
 										<label for="verwarmingsbron_houtkachel">Houtkachel</label>
-										<input type="checkbox" id="verwarmingsbron_elek_toestellen" name="verwarmingsbron">
+										<input type="checkbox" class = "verwarming" id="verwarmingsbron_elek_toestellen" name="verwarmingsbron_elek_toestellen" value = "Vaste elektrische verwarmingstoestellen;">
 										<label for="verwarmingsbron_elek_toestellen">Vaste elektrische verwarmingstoestellen</label>
-										<input type="checkbox" id="andere" name="verwarmingsbron">
-										<label for="andere">Andere</label>
+										<input type="checkbox" class = "verwarming" id="andere_verwarmingsbron" name="andere_verwarmingsbron" value = "Andere verwarmingsbron">
+										<label for="andere_verwarmingsbron">Andere</label>
 									</div>
 									<div class="col-6 col-12-xsmall">
 										<input type="text" name="bouwjaar" id="bouwjaar" value="" placeholder="Bouwjaar" />
@@ -103,10 +108,11 @@
 									<div class="col-12">
 										<textarea name="textarea" id="textarea" placeholder="Opmerkingen" rows="6"></textarea>
 									</div>
+									<input type = "hidden" id="verwarmingsbronnen" name = "verwarmingsbronnen"/>
 									<!-- Break -->
 									<div class="col-12">
 										<ul class="actions">
-											<li><input type="submit" value="Submit Form" class="primary" /></li>
+											<li><input type="submit" value="Submit Form" class="primary"/></li>
 											<li><input type="reset" value="Reset" /></li>
 										</ul>
 									</div>
