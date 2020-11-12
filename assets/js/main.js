@@ -15,8 +15,17 @@ function ChangeInputs()
     }
     var checkedStr = checked.join(' ');
     document.getElementById('verwarmingsbronnen').value = checkedStr;
-	document.write(document.getElementById('verwarmingsbronnen').value);
-   }
+
+	var boxes2 = document.getElementsByClassName('interesse');
+    var checked2 = [];
+    for (var i2 = 0; boxes2[i2]; ++i2) {
+        if (boxes2[i2].checked) {
+            checked2.push(boxes2[i2].value);
+        }
+    }
+    var checkedStr2 = checked2.join(' ');
+    document.getElementById('soort_interesse').value = checkedStr2;
+	document.write(document.getElementById('soort_interesse').value);   }
 
    window.addEventListener("load", function () {
      const form = document.querySelector("form");
@@ -24,7 +33,7 @@ function ChangeInputs()
      form.addEventListener("submit", function ( event ) {
        event.preventDefault();
 	   ChangeInputs();
-	    const form = document.querySelector("form");
+	   const form = document.querySelector("form");
        sendData();
      } );
 
