@@ -51,7 +51,7 @@ function ChangeInputs()
           referrer: "no-referrer"
         }
 
-        return fetch(url, opts).then(alert('Success')).catch((e) => {alert('Error:', e);});
+        return fetch(url, opts).then(alert('Uw offerte is aangevraagd.')).catch((e) => {alert('Error:', e);});
      }
    } );
 
