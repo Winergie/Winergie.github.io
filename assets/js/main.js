@@ -60,6 +60,7 @@ function ChangeInputs()
 		$("#header").load("/header.html");
 		$("#footer").load("/footer.html");
 		$("#menu").load("/navbar.html");
+    $("head").load("/head.html");
 	});
 
 	var	$window = $(window),
